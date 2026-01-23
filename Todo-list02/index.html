@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Name Modal -->
+    <div id="nameModal" class="modal">
+      <div class="modal-content">
+        <h2>Welcome 👋</h2>
+        <p>Please enter your name</p>
+
+        <input type="text" id="userNameInput" placeholder="Your name..." />
+        <button id="saveNameBtn">Save</button>
+      </div>
+    </div>
+
+    <div class="header">
+      <p>Hello, <span class="username">User</span></p>
+      <p class="time">Time <span id="currentTime">--:--:--</span></p>
+    </div>
+    <div class="container">
+      <div class="title">
+        <h1>To Do List</h1>
+        <img
+          src="Assets/checklist_10552463.png"
+          alt="Todo icon"
+          class="task-icon"
+        />
+      </div>
+      <div class="input-field">
+        <input
+          type="text"
+          id="task-input"
+          class="task-input"
+          placeholder="Add a new task..."
+          aria-label="Task name"
+          required
+        />
+        <button id="addBtn">Add</button>
+      </div>
+
+      <div class="task-list-container">
+        <ul class="task-list">
+         
+        </ul>
+      </div>
+    </div>
+
+    
+
+    <script src="script.js"></script>
+  </body>
+</html>
