@@ -163,7 +163,7 @@ function showQuestion() {
     answerButton.textContent = answer.text;
     answerButton.classList.add("answer-btn");
     answerButton.dataset.correct = answer.correct;
-    answerButton.addEventListener("click", selectAnswer);
+    answersContainer.addEventListener("click", selectAnswer);
 
     answersContainer.appendChild(answerButton);
   });
